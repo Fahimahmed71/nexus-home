@@ -9,7 +9,7 @@ const Header = () => {
         <dt>
           <h1 className="sm:text-7xl text-3xl font-semibold text-neutral-400 text-center sm:text-start">
             Welcome To
-            <span className="text-sky-400">
+            <span className="text-sky-400 ">
               <Typewriter
                 options={{
                   strings: ["Nexus", "Home"],
@@ -22,16 +22,12 @@ const Header = () => {
           <p className="capitalize mt-5 tracking-widest text-gray-400 text-center sm:text-start">
             Find your best smart real estate
           </p>
+
+          <button className="btn btn-primary mt-5 block sm:mx-0 mx-auto">
+            view property
+          </button>
         </dt>
         <Image src={headerImageGif} alt="headerImageGif" />
-      </dl>
-
-      <dl>
-        <input
-          type="text"
-          placeholder="Type here"
-          className="input input-bordered w-full max-w-xs"
-        />
       </dl>
     </header>
   );
