@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 
 const Header = () => {
   return (
-    <header className="sm:pl-14 sm:p-0 p-5">
+    <header className="container mx-auto">
       <dl className="flex sm:flex-row flex-col justify-between items-center">
         <dt>
           <h1 className="sm:text-7xl text-3xl font-semibold text-neutral-400 text-center sm:text-start">

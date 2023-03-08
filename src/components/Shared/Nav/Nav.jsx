@@ -3,8 +3,10 @@ import { ImLocation2 } from "react-icons/im";
 
 const Nav = () => {
   return (
-    <nav className="container mx-auto">
-      <div className="navbar bg-base-100">
+    <nav className="container mx-auto relative">
+      <div className="w-[600px] h-[500px] left-[10%] opacity-25 bg-gradient-to-b from-cyan-400  to-white -z-10 blur-3xl absolute rounded-full sm:block hidden"></div>
+
+      <div className="navbar bg-base-100 bg-transparent">
         {/* mobile */}
         <div className="navbar-start sm:w-0 w-[35%]">
           <div className="dropdown">

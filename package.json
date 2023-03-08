@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
+    "aos": "^2.3.4",
     "daisyui": "^2.51.2",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.1",
