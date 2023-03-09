@@ -3,9 +3,7 @@ import { ImLocation2 } from "react-icons/im";
 
 const Nav = () => {
   return (
-    <nav className="container mx-auto relative">
-      <div className="w-[600px] h-[500px] left-[10%] opacity-25 bg-gradient-to-b from-cyan-400  to-white -z-10 blur-3xl absolute rounded-full sm:block hidden"></div>
-
+    <nav className="container mx-auto ">
       <div className="navbar bg-base-100 bg-transparent">
         {/* mobile */}
         <div className="navbar-start sm:w-0 w-[35%]">
@@ -32,37 +30,20 @@ const Nav = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Item 1</a>
-              </li>
-              <li tabIndex={0}>
-                <a className="justify-between">
-                  Parent
-                  <svg
-                    className="fill-current"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                  </svg>
-                </a>
-                <ul className="p-2">
-                  <li>
-                    <a>Submenu 1</a>
-                  </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
+                <a>Property</a>
               </li>
               <li>
-                <a>Item 3</a>
+                <a>Agents</a>
+              </li>
+
+              <li>
+                <a>Contract</a>
               </li>
             </ul>
           </div>
         </div>
-        <div className="sm:navbar-start">
+
+        <div className="sm:navbar-start navbar-center">
           <Link
             href="/"
             className="cursor-pointer flex gap-1 items-center normal-case text-xl text-sky-400"
@@ -70,6 +51,33 @@ const Nav = () => {
             <ImLocation2 />
             <span className="font-semibold">Nexus Home</span>
           </Link>
+        </div>
+
+        <div className="navbar-end sm:hidden">
+          <div className="dropdown dropdown-end">
+            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+              <div className="w-10 rounded-full">
+                <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              </div>
+            </label>
+            <ul
+              tabIndex={0}
+              className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
+            >
+              <li>
+                <a className="justify-between">
+                  Profile
+                  <span className="badge">New</span>
+                </a>
+              </li>
+              <li>
+                <a>Settings</a>
+              </li>
+              <li>
+                <a>Logout</a>
+              </li>
+            </ul>
+          </div>
         </div>
 
         {/* desktop */}
